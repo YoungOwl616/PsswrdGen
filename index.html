@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Psswrd Gen</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main-card-div">
+
+            <h1 id="logo-h1"><span id="hashtag-style">#</span> Psswrd Gen</h1>
+
+            <h3 class="query-h3">How many characters long would you like your password to be?</h3>
+            <input type="text" id="user-input">
+
+            <h3 class="query-h3">Which characters would you like your password to be comprised of?</h3>
+            <form action="" class="form-control">
+                <div id="form-div">
+                    <input class="radio" type="radio" name="GFG" id="just-letters" value="HTML">just Letters <br>
+                    <input class="radio" type="radio" name="GFG" id="add-num" value="HTML">Letters + Numbers <br>
+                    <input class="radio" type="radio" name="GFG" id="add-sym" value="HTML">Letters + Symbols <br>
+                    <input class="radio" type="radio" name="GFG" id="add-both" value="HTML">Letters + Numbers + Symbols
+                </div>
+            </form>
+
+            <button id="gen-btn" type="button" onclick="userInput()">Generate Password</button>
+
+            <button id="clear-btn" onclick="cleaner()">Clear</button>
+
+            <div id="output"></div>
+
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
